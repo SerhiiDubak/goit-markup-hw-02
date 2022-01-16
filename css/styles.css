@@ -6,9 +6,10 @@
     --second-title-color:#212121;
     --first-button-text-color:#212121;
     --second-button-text-color:#ffffff; 
-    --background-header-color:#FFFFFF;
-    --background-main-color:#F5F4FA;
-    --background-footer-hero-color:#2F303A;
+    --darkbgr-color: #2f303a;  /* Hero, footer background color */
+    --mainbgr-color: #e5e5e5;  /* Main background color*/
+    --mainbgrtwo-color: #f5f4fa;  /* 2nd Main background color */
+
 
 }
 
@@ -27,7 +28,7 @@ body {
     color: var(--accent-color)
 }
 
-.logo-part {
+.header-logo-part {
     color: #000      
 }
 
@@ -53,7 +54,7 @@ body {
 
 /*---------------HERO---------------*/
 .hero {
-    background-color:var(--background-footer-hero-color);
+    background-color: var(--darkbgr-color);
 }
 
 .hero-title {
@@ -77,10 +78,63 @@ body {
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background: #2196F3; 
-}*/
+}
+
+/*---------------FEATURE (Особенности)---------------*/
+.feature {
+    background-color: var(--mainbgr-color);
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+        color: var(--second-title-color)
+}
+.feature-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    
+    color: var(--secondary-text-color);
+}
+
+/*-- section-2 photo (Чем мы занимаемся)-->*/
+
+.photo {
+    background-color: var(--mainbgr-color);
+}
+.photo {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*-- section 3 (О нас)--*/
+.team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;  
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-text {
+color: var(--secondary-text-color);
+}
+
 /*---------------FOOTER---------------*/
 .footer {
-    background-color:var(--background-footer-hero-color);
+    background-color: var(--darkbgr-color);
+}
+
+.footer-logo-part {
+    color: #FFFFFF     
 }
 
 .footer-list, .footer-item {
@@ -96,6 +150,38 @@ body {
 .footer-link-tel {
     color: var(--secondary-text-color);
 }
+/*- section  buttons-filter (Кнопки-Фильтр) --*/
+.filter {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--second-button-text-color);
+}
+/*  <!-- section project (секция с проектами) -->*/
+.project-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--second-title-color);
+}
+.project-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
 
 /*----------------обнуляшки-----------*/
 .list {

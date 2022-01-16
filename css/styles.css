@@ -1,17 +1,23 @@
 :root {
-    --main-text-color: #212121;
+    --main-text-color:#212121;
     --secondary-text-color:#757575;
-    --accent-color: #2196f3;
-    --first-text-color: #212121;
-    --second-buttom-text-color: #ffffff; 
+    --accent-color:#2196f3;
+    --first-title-color:#FFFFFF;
+    --second-title-color:#212121;
+    --first-button-text-color:#212121;
+    --second-button-text-color:#ffffff; 
+    --background-header-color:#FFFFFF;
+    --background-main-color:#F5F4FA;
+    --background-footer-hero-color:#2F303A;
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--first-text-color)
+    color: var(--main-text-color)
 }
 
-/*---------------HEDER---------------*/
+/*---------------HEADER---------------*/
 .logo {
     font-family: Raleway;
     font-weight: bold;
@@ -25,18 +31,29 @@ body {
     color: #000      
 }
 
-.header {
+.link {
+    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    /*color: var(--main-text-color);*/
+    color: inherit;
+}   
+
+.interactive:hover,
+.interactive:focus {
+    color: var(--accent-color);
 }
-.header-navigation-item {
-    color: var(--second-buttom-text-color)
+
+.header-link-mail,
+.header-link-tel {
+    color: var(--secondary-text-color);
 }
+
 /*---------------HERO---------------*/
 .hero {
-    background: #2F303A;
+    background-color:var(--background-footer-hero-color);
 }
 
 .hero-title {
@@ -46,10 +63,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--first-title-color);
 }
 
 .hero-btn {
+    font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
@@ -58,22 +76,38 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-}
-.list {
-    list-style: none;
-}
-p {
-    margin: 0;
-}
-a {
-    text-decoration: none;
+    background: #2196F3; 
+}*/
+/*---------------FOOTER---------------*/
+.footer {
+    background-color:var(--background-footer-hero-color);
 }
 
-/*--footer--*/
 .footer-list, .footer-item {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+
+.footer-link-way,
+.footer-link-mail,
+.footer-link-tel {
+    color: var(--secondary-text-color);
+}
+
+/*----------------обнуляшки-----------*/
+.list {
+    list-style: none;
+}
+.project {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
 }

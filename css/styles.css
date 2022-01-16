@@ -1,3 +1,79 @@
+:root {
+    --main-text-color: #212121;
+    --secondary-text-color:#757575;
+    --accent-color: #2196f3;
+    --first-text-color: #212121;
+    --second-buttom-text-color: #ffffff; 
+}
+
 body {
-    background-color: tomato;
+    font-family: 'Roboto', sans-serif;
+    color: var(--first-text-color)
+}
+
+/*---------------HEDER---------------*/
+.logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color)
+}
+
+.logo-part {
+    color: #000      
+}
+
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-navigation-item {
+    color: var(--second-buttom-text-color)
+}
+/*---------------HERO---------------*/
+.hero {
+    background: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.list {
+    list-style: none;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/*--footer--*/
+.footer-list, .footer-item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }

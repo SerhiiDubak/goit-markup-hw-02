@@ -32,6 +32,10 @@ body {
     color: #000      
 }
 
+.active {
+    color: #2196f3;
+}
+
 .link {
     font-family: inherit;
     font-weight: 500;
@@ -81,9 +85,9 @@ body {
 }
 
 /*---------------FEATURE (Особенности)---------------*/
-.feature {
+/*.feature {
     background-color: var(--mainbgr-color);
-}
+}*/
 
 .feature-title {
     font-weight: bold;
@@ -91,19 +95,19 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-        color: var(--second-title-color)
+    
+    color: var(--second-title-color)
 }
 .feature-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
-    /* or 171% */
     letter-spacing: 0.03em;
     
     color: var(--secondary-text-color);
 }
 
-/*-- section-2 photo (Чем мы занимаемся)-->*/
+/*----------section-2 photo (Чем мы занимаемся)---------->*/
 
 .photo {
     background-color: var(--mainbgr-color);
@@ -115,7 +119,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 }
-/*-- section 3 (О нас)--*/
+/*----------section 3 (about/О нас)----------*/
 .team {
     font-weight: 500;
     font-size: 16px;
@@ -137,25 +141,29 @@ color: var(--secondary-text-color);
     color: #FFFFFF     
 }
 
-.footer-list, .footer-item {
+.footer-link-way,
+.footer-link-mail,
+.footer-link-tel {
+    font-family: Roboto;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.footer-link-way {
     color: #FFFFFF;
 }
-
-.footer-link-way,
 .footer-link-mail,
 .footer-link-tel {
-    color: var(--secondary-text-color);
+    color: rgba(255, 255, 255, 0.6);
 }
-/*- section  buttons-filter (Кнопки-Фильтр) --*/
+
+/*----------section  buttons-filter (Кнопки-Фильтр)----------*/
 .filter {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-/* identical to box height, or 162% */
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
@@ -164,26 +172,24 @@ color: #212121;
 .filter-btn:focus {
     color: var(--second-button-text-color);
 }
-/*  <!-- section project (секция с проектами) -->*/
+/*----------section project (секция с проектами)----------*/
 .project-title {
     font-weight: bold;
     font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-title-color);
 }
 .project-text {
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 187% */
+    line-height: 1,87;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
 
-/*----------------обнуляшки-----------*/
+/*----------обнуляшки----------*/
 .list {
     list-style: none;
 }

@@ -33,7 +33,7 @@ body {
 }
 
 .active {
-    color: #2196f3;
+    color: var(--accent-color);
 }
 
 .link {
@@ -108,28 +108,40 @@ body {
 }
 
 /*----------section-2 photo (Чем мы занимаемся)---------->*/
-
-.photo {
-    background-color: var(--mainbgr-color);
-}
-.photo {
-    font-weight: bold;
+.photo-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.photo {
+    background-color: var(--mainbgr-color);
+}
+    
 /*----------section 3 (about/О нас)----------*/
-.team {
+.team-title {   
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;  
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 .team-text {
-color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
 }
 
 /*---------------FOOTER---------------*/
@@ -151,27 +163,40 @@ color: var(--secondary-text-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 .footer-link-way {
     color: #FFFFFF;
 }
+
 .footer-link-mail,
 .footer-link-tel {
     color: rgba(255, 255, 255, 0.6);
 }
 
 /*----------section  buttons-filter (Кнопки-Фильтр)----------*/
-.filter {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+.filter-title{
+    display: none;
 }
+
+.filter-btn{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--first-button-text-color);
+    background-color: var(--mainbgrtwo-color);
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--second-button-text-color);
+    background-color: var(--accent-color);
 }
+
 /*----------section project (секция с проектами)----------*/
 .project-title {
     font-weight: bold;
@@ -183,7 +208,7 @@ color: #212121;
 .project-text {
     font-weight: normal;
     font-size: 16px;
-    line-height: 1,87;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
